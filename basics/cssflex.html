@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* reset  */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #eaeae9;
+            padding: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 1.5rem;
+        }
+
+        ul>li {
+            /* 1 means grow to fill the space */
+            flex-grow: 0;
+        }
+
+        li {
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            padding: .5rem 1rem;
+            transition: all 500ms;
+        }
+
+        a:hover {
+            color: rgb(255, 60, 0);
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Plaground</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>
