@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            height: 100vh;
+            /* 100% of the viewport height */
+            display: grid;
+            place-items: center;
+        }
+        .container{
+            display: flex;
+            outline: 2px solid red;
+        }
+        h1{
+            font-size: 5rem;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        h1 >     span{
+            font-weight: lighter;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="leftcol">
+                    <div>
+                        <img src="logo.png" alt="logo" height="64" width="64">
+                        <a href="#">Zimcore<br>Hubs</a>
+                    </div>
+                    <h1>
+                        <span>Changing the world</span><br> one app at a time
+                    </h1>
+                    <div>
+                        <a class="cta" href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="rightcol">
+                    <img src="hero.png" alt="hero" height="700">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="leftcol">
+                    <div>
+                        <h2>Our Company Story</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsa saepe error est? Sint
+                            veritatis consequuntur reiciendis facere sequi ex aliquam magnam repellendus, provident
+                            quaerat.
+                        </p>
+                    </div>
+                </div>
+                <div class="rightcol">
+                    <img src="person1.png" alt="" height="400">
+                    <img src="person1.png" alt="" height="400">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services">
+                    <div class="card">
+                        <img src="icon1.png" alt="" height="80">
+                        <h3>App Consultancy</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Ducimus, accusantium.</p>
+                    </div>
+                    <div class="card">
+                        <img src="icon2.png" alt="" height="80">
+                        <h3>App Consultancy</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Dignissimos, sapiente!</p>
+                    </div>
+                    <div class="card">
+                        <img src="icon3.png" alt="" height="80">
+                        <h3>App Consultancy</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Ducimus, accusantium.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section></section>
+        <section></section>
+    </main>
+</body>
+
+</html>
