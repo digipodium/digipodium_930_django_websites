@@ -18,24 +18,110 @@
             display: grid;
             place-items: center;
         }
-        .container{
+
+        .container {
             display: flex;
-            outline: 2px solid red;
+            justify-content: center;
         }
-        h1{
+
+        h1 {
+            color: white;
             font-size: 5rem;
             font-family: sans-serif;
             text-align: center;
         }
-        h1 >     span{
+
+        h1>span {
             font-weight: lighter;
+        }
+
+        #s1 {
+            background-image: url('background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .leftcol {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .leftcol div:nth-child(1) {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .leftcol a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+
+        .leftcol img {
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .cta {
+            font-size: 1.5rem !important;
+            padding: .5rem 3rem;
+            color: #0090e3 !important;
+            background-color: white;
+            border-radius: 5rem;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(174, 174, 174);
+            gap: 2rem;
+            padding: 10rem 3rem;
+            width: 40%;
+
+        }
+
+        .intro h2 {
+            font-size: 4rem;
+            color: rgb(65, 65, 250);
+        }
+
+        .intro p {
+            font-size: 2rem;
+            color: rgb(60, 59, 59);
+        }
+
+        .owners {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .owners .i1 {
+            align-self: flex-start;
+            border-radius: 3rem;
+        }
+
+        .owners .i2 {
+            align-self: flex-end;
+            border-radius: 3rem;
+        }
+
+        .c2 {
+            gap: 3rem;
         }
     </style>
 </head>
 
 <body>
     <main>
-        <section>
+        <section id="s1">
             <div class="container">
                 <div class="leftcol">
                     <div>
@@ -55,19 +141,19 @@
             </div>
         </section>
         <section>
-            <div class="container">
-                <div class="leftcol">
-                    <div>
-                        <h2>Our Company Story</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsa saepe error est? Sint
-                            veritatis consequuntur reiciendis facere sequi ex aliquam magnam repellendus, provident
-                            quaerat.
-                        </p>
-                    </div>
+            <div class="container c2">
+                <div class="intro">
+
+                    <h2>Our Company Story</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsa saepe error est? Sint
+                        veritatis consequuntur reiciendis facere sequi ex aliquam magnam repellendus, provident
+                        quaerat.
+                    </p>
+
                 </div>
-                <div class="rightcol">
-                    <img src="person1.png" alt="" height="400">
-                    <img src="person1.png" alt="" height="400">
+                <div class="owners">
+                    <img class="i1" src="person1.png" alt="" height="400">
+                    <img class="i2" src="person1.png" alt="" height="400">
                 </div>
             </div>
         </section>
